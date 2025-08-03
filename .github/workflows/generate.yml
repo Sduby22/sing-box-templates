@@ -9,6 +9,8 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Git config
         run: |
@@ -30,5 +32,5 @@ jobs:
           git init
           git add -A mixed tun
           git commit -m "更新于 $(TZ='UTC-8' date -I'seconds')"
-          git remote add origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/Sduby22/sing-box-templates.git
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push -uf origin public:public
