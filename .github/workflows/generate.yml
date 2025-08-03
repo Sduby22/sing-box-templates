@@ -17,7 +17,7 @@ jobs:
           git config --global init.defaultBranch public
       - name: Generate Templates
         run: |
-          git clone --branch master https://github.com/senzyo/sing-box-templates.git master
+          git clone --branch master https://github.com/Sduby22/sing-box-templates.git master
           cd master
           chmod +x generate.sh
           ./generate.sh mixed.json ../public/mixed config.json
@@ -30,5 +30,5 @@ jobs:
           git init
           git add -A mixed tun
           git commit -m "更新于 $(TZ='UTC-8' date -I'seconds')"
-          git remote add origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/senzyo/sing-box-templates.git
+          git remote add origin https://${{ secrets.PERSONAL_TOKEN }}@github.com/Sduby22/sing-box-templates.git
           git push -uf origin public:public
