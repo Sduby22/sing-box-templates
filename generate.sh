@@ -18,7 +18,7 @@ declare -A ali=(
   ["doh"]="https://dns.alidns.com/dns-query"
   ["doq"]="quic://dns.alidns.com"
   ["dot"]="tls://dns.alidns.com"
-  ["h3"]="h3://dns.alidns.com/dns-query"
+  ["h3"]="h3://672171-1uptwgcs3i8lkn6r.alidns.com/dns-query"
 )
 declare -A dnspod=(
   ["doh"]="https://doh.pub/dns-query"
