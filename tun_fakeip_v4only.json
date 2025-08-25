@@ -25,13 +25,13 @@
     "servers": [
       {
         "tag": "国际 DNS",
-        "address": "https://dns.google/dns-query",
+        "address": "h3://dns.google/dns-query",
         "address_resolver": "CNNIC DNS",
         "detour": "🚀 默认出站"
       },
       {
         "tag": "中国 DNS",
-        "address": "https://dns.alidns.com/dns-query",
+        "address": "h3://672171-1uptwgcs3i8lkn6r.alidns.com/dns-query",
         "address_resolver": "CNNIC DNS",
         "detour": "🐢 直连"
       },
@@ -111,11 +111,11 @@
       "type": "tun",
       "tag": "tun-in",
       "address": [
-        "172.18.0.1/30"
+        "172.18.0.1/30",
+        "fdfe:dcba:9876::1/126"
       ],
       "auto_route": true,
       "strict_route": true,
-      "endpoint_independent_nat": false,
       "stack": "system",
       "exclude_package": [
         "com.android.captiveportallogin"
