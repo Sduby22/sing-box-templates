@@ -501,7 +501,15 @@
       {
         "rule_set": [
           "geoip_cn",
-          "geosite_cn"
+          "geosite_cn",
+          "GeoSite-CN",
+          "GeoSite-Apple-CN",
+          "GeoSite-Google-CN",
+          "GeoIP-APNIC-CN-IPv4",
+          "GeoIP-APNIC-CN-IPv6",
+          "GeoIP-MaxMind-CN-IPv4",
+          "GeoIP-MaxMind-CN-IPv6",
+          "GeoIP-ChnRoutes2-CN-IPv4"
         ],
         "action": "route",
         "outbound": "🐢 直连"
@@ -593,6 +601,70 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoSite-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/accelerated-domains.china.conf.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoSite-Apple-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/apple.china.conf.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoSite-Google-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/google.china.conf.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoIP-APNIC-CN-IPv4",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/apnic-cn-ipv4.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoIP-APNIC-CN-IPv6",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/apnic-cn-ipv6.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoIP-MaxMind-CN-IPv4",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/maxmind-cn-ipv4.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoIP-MaxMind-CN-IPv6",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/maxmind-cn-ipv6.srs",
+        "download_detour": "🐢 直连",
+        "update_interval": "3d"
+      },
+      {
+        "tag": "GeoIP-ChnRoutes2-CN-IPv4",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Dreista/sing-box-rule-set-cn@rule-set/chnroutes.txt.srs",
         "download_detour": "🐢 直连",
         "update_interval": "3d"
       }
