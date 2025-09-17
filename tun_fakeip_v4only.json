@@ -513,6 +513,13 @@
         ],
         "action": "route",
         "outbound": "🐢 直连"
+      },
+      {
+        "domain_suffix": [
+          "qrii.co"
+        ],
+        "action": "route",
+        "outbound": "🐢 直连"
       }
     ],
     "rule_set": [

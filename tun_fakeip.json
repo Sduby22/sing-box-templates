@@ -6,11 +6,11 @@
   },
   "experimental": {
     "clash_api": {
-      "external_controller": "127.0.0.1:9090",
+      "external_controller": "0.0.0.0:9090",
       "external_ui": "ui",
       "external_ui_download_url": "https://ghproxy.net/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
       "external_ui_download_detour": "🐢 直连",
-      "secret": "",
+      "secret": "Sduby22",
       "default_mode": "rule",
       "access_control_allow_origin": "*",
       "access_control_allow_private_network": false
@@ -511,6 +511,13 @@
           "GeoIP-MaxMind-CN-IPv4",
           "GeoIP-MaxMind-CN-IPv6",
           "GeoIP-ChnRoutes2-CN-IPv4"
+        ],
+        "action": "route",
+        "outbound": "🐢 直连"
+      },
+      {
+        "domain_suffix": [
+          "qrii.co"
         ],
         "action": "route",
         "outbound": "🐢 直连"
